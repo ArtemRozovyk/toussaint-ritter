@@ -1,0 +1,19 @@
+Afin d'executer l'application il faut simplement:
+0.S'assurer que la version de java est bien oracle 1.8.0_*** (ayant encore le JavaFX) : java -version 
+	sinon faire : ` sudo update-alternatives --config java ` et choisir oracle-jdk8
+
+1. Executer le script ./exec.sh 
+
+Pout tester les fonctionalités, dans l'interface graphique: 
+
+1. Cliquer "Find test files" une fenêtre de localisation de fichiers va s'ouvrir
+2. Choisir le dossier "Samples" contenant la base de test, cliquer ouvrir. 
+2.1 Pour tester un fichier particulier cliquer sur le menu deroulant a droite du "Loaded files"
+2.2 Choisir un fichier
+2.3 Cliquer "Load points"
+2.4 Tester les algorithmes Toussaint/Ritter(/ConvexHull)
+
+Pour tester l'ensemble de fichiers chargés et produire 2 fichies .csv contant le résultat pour les deux algorithmes
+
+1. Cliquer "Test all loaded" 
+2. Deux fichiers vont se produire dans le répértoire Sources_ROZOVYK/ToussaintRitter

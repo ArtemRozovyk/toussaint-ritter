@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="826.0000999999975" prefWidth="1027.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Button layoutX="717.0" layoutY="716.0" mnemonicParsing="false" onAction="#ritter" text="Ritter" />
+    <Button layoutX="617.0" layoutY="716.0" mnemonicParsing="false" onAction="#toussaint" text="Toussaint" />
+    <Button layoutX="303.0" layoutY="724.0" mnemonicParsing="false" onAction="#findTestFiles" text="Find test files" />
+    <Button id="loadPoints" layoutX="134.0" layoutY="765.0" mnemonicParsing="false" onAction="#loadPoints" text="Load points" />
+    <Label fx:id="result" layoutX="440.0" layoutY="771.0" prefHeight="21.0" prefWidth="54.0" text="" />
+    <Button layoutX="617.0" layoutY="765.0" mnemonicParsing="false" onAction="#convexHull" text="ConvexHull" />
+    <Button layoutX="303.0" layoutY="765.0" mnemonicParsing="false" onAction="#testAllLoaded" text="Test all loaded" />
+    <ComboBox fx:id="filesLoaded" layoutX="134.0" layoutY="722.0" prefWidth="138.0" />
+    <Label layoutX="14.0" layoutY="722.0" text="Loaded Files" />
+    <ScrollPane fx:id="graphicPane" layoutX="14.0" layoutY="14.0" prefHeight="684.0" prefWidth="978.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+      </content>
+    </ScrollPane>
+    <Label layoutX="823.0" layoutY="710.0" text="Time elapsed" />
+    <Label fx:id="msElapsed" layoutX="919.0" layoutY="710.0" text="0" />
+    <Label id="msElapsed" layoutX="958.0" layoutY="710.0" text="ms" />
+    <Label layoutX="823.0" layoutY="760.0" text="Quality" />
+    <Label fx:id="quality" layoutX="875.0" layoutY="760.0" text="" />
+    <Label layoutX="857.0" layoutY="737.0" text="0" />
+    <Label layoutX="823.0" layoutY="737.0" text="0" />
+  </children>
+</AnchorPane>
